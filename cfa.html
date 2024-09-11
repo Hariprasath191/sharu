@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            background-color: #032e80;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            height: 100vh; /* Set the height to full viewport height */
+            display: flex; /* Use flexbox to align items */
+            flex-direction: column; /* Align items in a column */
+        }
+        .header {
+            background-color: #222;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; /* Ensure header takes full width */
+        }
+        .header .logo {
+            color: #32a852; /* Envato green color */
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .buy-button {
+            background-color: #85bb65;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container {
+            flex: 1; /* Take up remaining space below the header */
+            display: flex; /* Use flexbox to center content */
+            flex-direction: column; /* Align items in a column */
+            justify-content: center; /* Center items vertically */
+            align-items: center; /* Center items horizontally */
+            text-align: center;
+            padding: 20px; /* Add some padding */
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        .input-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        input[type="int"] {
+            padding: 15px;
+            font-size: 16px;
+            width: 300px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #5a67d8;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #434190;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Mission<span style="color: white;"> Carbon</span></div>
+        <a href="#" class="buy-button">Help</a>
+    </div>
+
+    <div class="container">
+        <h1>Carbon Emission Estimator</h1>
+        <p>Your tool for analyzing and reducing carbon emissions in coal mines</p>
+        <div class="input-container">
+            <input type="int" placeholder="Enter the Carbon content ">
+            <button onclick="window.location.href='page2.html';">Estimate</button>
+        </div>
+    </div>
+</body>
+</html>

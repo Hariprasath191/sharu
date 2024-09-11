@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact - BootstrapMade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #003b82;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            margin-right: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://c1.wallpaperflare.com/preview/250/975/705/industry-dumper-minerals-coal.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .features {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px 0;
+        }
+        .feature-box {
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+            background-color: #506e6d;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            color: white;
+            display: block; /* Ensure the feature box is a block element */
+            text-decoration: none; /* Remove underline */
+        }
+        .feature-box i {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .feature-box img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .feature-box:hover {
+            transform: scale(1.05);
+            background-color: #005f5c;
+        }
+        .navbar-brand, .navbar-nav .nav-link:hover {
+            color: #00d9cd !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mission Carbon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Your tool for analyzing and reducing carbon emissions in coal mines.</h2>
+        </div>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="cfa.html" class="feature-box"> <!-- Link to the second page -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-GpF67-OSsbMKR9bPgjz58ubMq3OJ1XgYRg&s" alt="Carbon Footprint Assessment">
+                            <h3>Carbon Footprint Assessment</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <img src="https://media.istockphoto.com/id/1479453445/vector/vector-thin-line-icon-outline-linear-stroke-illustrations-co2-emissions-by-a-factory-and-co2.jpg?s=612x612&w=0&k=20&c=NY4WVk2Gta0MHxFdbB4HHWhhrnPCT1r0PGzv6UiB138=" alt="Tree Carbon Sequestration">
+                            <h3>Tree Carbon Sequestration</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYcj-2p2apk2CaYtamGS8HjL5XcJ1_ATC3Fg&s" alt="Visualization">
+                            <h3>Visualization</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-box" style="padding: 5px;"> <!-- Reduced padding for the Solutions box -->
+                            <img src="https://static.vecteezy.com/system/resources/previews/021/930/028/non_2x/idea-solution-icon-symbol-image-illustration-of-the-creative-innovation-concept-design-eps-10-vector.jpg" alt="Solutions">
+                            <h3>Solutions</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
